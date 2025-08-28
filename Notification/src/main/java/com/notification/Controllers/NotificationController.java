@@ -12,6 +12,7 @@ public class NotificationController {
     public ResponseEntity<?> sendNotification() {
         return ResponseEntity.ok("Notification sent");
     }
+
     @GetMapping("/get")
     public ResponseEntity<?> recieveNotification() {
         return ResponseEntity.ok("Notification Recieved");

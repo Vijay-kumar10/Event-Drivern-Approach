@@ -23,11 +23,12 @@ public class NotificationService {
     public Function<OrderInformation,String> orderNotification(){
             return orderInformation ->{
                 sendNotification(orderInformation);
+                System.out.println(orderInformation.getUserName());
                 System.out.println(orderInformation.getEmail());
                 System.out.println(orderInformation.getOrderId());
                 System.out.println(orderInformation.getPrice());
                 System.out.println(orderInformation.getCreatedDate());
-                return orderInformation.getUserId();
+                return "Hello "+orderInformation.getUserName()+", Your data is successfully submitted";
             };
     }
 
