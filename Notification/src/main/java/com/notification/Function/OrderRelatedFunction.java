@@ -15,16 +15,16 @@ public class OrderRelatedFunction {
     public Function<Order,String> orderEventReceiver() {
         return  (order -> {
             //logig to send to email and message to user
-            System.out.println("Notification send to user");
+            System.out.println("Notification Receive from user.");
             logicToSendEmailAndMessageToUser(order.getEmail(),order.getUserPhone());
-            return "order Notification to send user";
+            return "Order received Successfully. Thank you.";
         });
     }
 
     private void logicToSendEmailAndMessageToUser(String email, String userPhone) {
         System.out.println("Send email to "+email);
         System.out.println("Send message to "+userPhone);
-        System.out.println("Notifications send to user successfully.");
+        System.out.println("Order receive from the user successfully.");
         System.out.println("--------------------");
     }
 }
