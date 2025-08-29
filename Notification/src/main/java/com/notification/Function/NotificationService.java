@@ -1,5 +1,5 @@
 package com.notification.Function;
-import com.notification.dto.OrderInformation;
+import com.notification.entities.OrderInformation;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

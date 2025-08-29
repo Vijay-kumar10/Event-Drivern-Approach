@@ -31,6 +31,18 @@
 		<spring-cloud.version>2025.0.0</spring-cloud.version>
 	</properties>
 	<dependencies>
+
+<!-- 	//Both dependency used for spring cloud stream binding to implement event-driven-approach -->
+	    <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-stream</artifactId>
+        </dependency>
+        <dependency>
+           <groupId>org.springframework.cloud</groupId>
+           <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
+         </dependency>
+
+
          <!-- dependency to run the http request -->
 		 <dependency>
                 <groupId>org.springframework.boot</groupId>

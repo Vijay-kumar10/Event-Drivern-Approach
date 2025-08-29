@@ -1,4 +1,4 @@
-package com.notification.dto;
+package com.notification.entities;
 
 import lombok.Data;
 
@@ -6,7 +6,6 @@ import java.util.Date;
 
 @Data
 public class OrderInformation {
-
     private String orderId;
     private String userId;
     private String userName;
